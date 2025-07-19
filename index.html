@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
-  <link rel="stylesheet" href="style.css">
-  <title>Rock Paper Scissors</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-<h1>Right click > Inspect</h1>
-<h1>Go to Console</h1>
-<h1>Refresh</h1>
+<h1>Rock Paper Scissors</h1>
+<div class="playerButtons">
+    <button id="rock">🪨</button>
+    <button id="paper">🧻</button>
+    <button id="scissors">✂️</button>
+</div>
+<div class="gameInfo">
+    <h2>Describe what happens at the end of the round</h2>
+    <h2>Announce winner</h2>
+    <p>Player Score: <span id="playerScoreDisplay">0</span></p>
+    <p>Computer Score: <span id="computerScoreDisplay">0</span></p>
+    <p>Draw Count: <span id="drawCounter">0</span></p>
+    <button id="restartGame">Restart</button>
+</div>
 <script src="index.js"></script>
 </body>
 </html>
