@@ -21,7 +21,7 @@ let drawScore = 0;
 function playRound(playerSelect) {
     const randomIndex = Math.floor(Math.random() * choices.length);
     const computerChoice = choices[randomIndex];
-    let result = ""
+    let result
 
     if (playerSelect === computerChoice) {
         result = "Draw"
