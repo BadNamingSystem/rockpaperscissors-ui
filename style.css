@@ -8,6 +8,7 @@ html, body {
 h1 {
     text-align: center;
     font-size: 3rem;
+    margin: 20px 10px;
 }
 
 .playerButtons {
@@ -15,6 +16,7 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    padding: 0 20px;
 }
 
 .playerButtons > button {
@@ -25,10 +27,14 @@ h1 {
     background-color: #0471A6;
     box-shadow: 0 0 10px #433E3F;
     cursor: pointer;
+    min-width: 120px;
+    min-height: 120px;
 }
+
 .playerButtons > button:hover {
     background-color: #3685B5;
 }
+
 .playerButtons > button:active {
     background-color: #89AAE6;
 }
@@ -38,19 +44,21 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-   justify-content: center;
+    justify-content: center;
     border-top: 2px solid black;
     margin-top: 25px;
+    padding: 20px;
 }
 
 #resetGame {
     font-size: 1.8rem;
     background-color: black;
     color: white;
-    padding: 5px 15px;
+    padding: 10px 20px;
     border: none;
     border-radius: 7px;
     cursor: pointer;
+    margin-top: 15px;
 }
 
 #resetGame:hover {
@@ -62,3 +70,35 @@ h1 {
     background-color: #89AAE6;
 }
 
+/*Media styles*/
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        margin: 10px 5px;
+    }
+
+    .playerButtons {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .playerButtons > button {
+        font-size: 4rem;
+        padding: 15px;
+        min-width: 80px;
+        min-height: 80px;
+    }
+
+    .gameInfo {
+        font-size: 1.1em;
+        margin-top: 15px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #resetGame {
+        font-size: 1.4rem;
+        padding: 8px 12px;
+    }
+}
