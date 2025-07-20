@@ -9,11 +9,6 @@ const drawCountDisplay = document.getElementById("drawCountDisplay")
 const resultDisplay = document.getElementById("resultDisplay")
 const roundInfo = document.getElementById("roundInfo")
 
-rock.addEventListener("click", () => playRound("rock"))
-paper.addEventListener("click", () => playRound("paper"))
-scissors.addEventListener("click", () => playRound("scissors"))
-reset.addEventListener("click", () => resetGame())
-
 let playerScore = 0;
 let computerScore = 0;
 let drawScore = 0;
@@ -54,6 +49,11 @@ function resetGame() {
     computerScoreDisplay.textContent = `Computer Score: 0`
     drawCountDisplay.textContent = `Draw Count: 0`
 }
+
+rock.addEventListener("click", () => playRound("rock"))
+paper.addEventListener("click", () => playRound("paper"))
+scissors.addEventListener("click", () => playRound("scissors"))
+reset.addEventListener("click", () => resetGame())
 
 
 
